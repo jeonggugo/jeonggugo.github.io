@@ -1,9 +1,9 @@
 ---
 name: Sujay Kundu
-username: xplor4r
+username: jeongugo
 bio: "Full Stack Web Developer, based in Bangalore, India"
 site: https://sujaykundu.com
-avatar: xplor4r.png
+avatar: jeongugo.png
 email: mail@sujaykundu.com
 social:
     - title: "github"
