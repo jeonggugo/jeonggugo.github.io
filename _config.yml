@@ -28,9 +28,9 @@ author_logo: profile.png
 author: Jeongugo
 author_bio: Hi, my name is Jeongugo. I built this site using devlopr-jekyll :D
 author_email: "jeongkuk5019@gmail.com"
-author_location: India
+author_location: Korea
 author_website_url: "https://naver.com"
-typewrite-text: devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
+typewrite-text: 매일 새로운 내용을 학습해서 올릴 예정입니다...
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
