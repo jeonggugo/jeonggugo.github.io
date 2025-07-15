@@ -13,7 +13,6 @@ permalink: /blog/adding-categories-tags-in-posts/
 ---
 
 ## Adding Multiple Categories in Posts
-
 개발환경 
 
 언어 셋팅 : java jdk jre 
@@ -34,6 +33,7 @@ java -version, java --version 명령어를 통해 java의 버전을 확인할 �
 
 현재 컴퓨터의 자바 버전은 21 추후에 낮춰서 메이저 버전으로 사용할 것임.
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 자바설치 완료
 인스톨러에서 path를 등록해주는
@@ -49,7 +49,7 @@ java -version, java --version 명령어를 통해 java의 버전을 확인할 �
 bin 바이너리 0과 1로 구성되어있다. 바이너리는 컴파일이 끝난 것들이다 .exe파일이 모여있는 것이다.
 
 노션
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 이클립스 설치
 
 워크 스페이스 셋팅 디폴트 위치
@@ -58,5 +58,19 @@ bin 바이너리 0과 1로 구성되어있다. 바이너리는 컴파일이 끝�
 
 워크스페이스 앞에 개념 솔루션
 
-워크스페이스 - 1.프로젝트
-            	2. 프로젝트 
+워크스페이스  
+1. 프로젝트
+2. 프로젝트 
+
+<h5> Posts by Category : {{ page.title }} </h5>
+
+<div class="card">
+{% for post in site.categories.your_category_name %}
+ <li class="category-posts"><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</div>
+```
+
+Using the category, all the posts associated with the category will be listed on
+`http://localhost:4000/blog/categories/your_category_name`
+
