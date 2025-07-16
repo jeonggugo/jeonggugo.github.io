@@ -71,6 +71,3 @@ bin 바이너리 0과 1로 구성되어있다. 바이너리는 컴파일이 끝�
 </div>
 ```
 
-Using the category, all the posts associated with the category will be listed on
-`http://localhost:4000/blog/categories/your_category_name`
-
