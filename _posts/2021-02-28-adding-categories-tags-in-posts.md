@@ -13,7 +13,6 @@ permalink: /blog/adding-categories-tags-in-posts/
 ---
 
 ## Adding Multiple Categories in Posts
-
 개발환경 
 
 언어 셋팅 : java jdk jre 
@@ -59,5 +58,19 @@ bin 바이너리 0과 1로 구성되어있다. 바이너리는 컴파일이 끝�
 
 워크스페이스 앞에 개념 솔루션
 
-워크스페이스 - 1.프로젝트
-            	2. 프로젝트 
+워크스페이스  
+1. 프로젝트
+2. 프로젝트 
+
+<h5> Posts by Category : {{ page.title }} </h5>
+
+<div class="card">
+{% for post in site.categories.your_category_name %}
+ <li class="category-posts"><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</div>
+```
+
+Using the category, all the posts associated with the category will be listed on
+`http://localhost:4000/blog/categories/your_category_name`
+
